@@ -11,20 +11,18 @@ varias lineas
 de codigo 
 """
 
-#Impresion de texto en pantalla
-"""""
-ejemplo 2) 
-    print("Hola mundo") bien
-    print("Hola mundo", "Adios mundo") bien
-    print('Hola mundo', 'Adios mundo') bien
-    print(Hola mundo) Error
 
-"""""
+#Ejemplo 2) 
+print("Hola mundo") #bien
+print("Hola mundo", "Adios mundo") #bien
+print('Hola mundo', 'Adios mundo')#bien
+   # print(Hola mundo) Error
+
+
 #Adicional Consultar el tipo de dato
-"""""
-    print(type("Hola mundo")) bien-> tipo str
-    print(type(10)) bien-> tipo int
-    print(type(3.14)) bien-> tipo float
-    print(type(True)) bien-> tipo bool
-    print(type(4+2j)) bien-> tipo complex
-"""
+
+print(type("Hola mundo")) #bien-> tipo str
+print(type(10)) #bien-> tipo int
+print(type(3.14)) #bien-> tipo float
+print(type(True)) #bien-> tipo bool
+print(type(4+2j)) #bien-> tipo complex
