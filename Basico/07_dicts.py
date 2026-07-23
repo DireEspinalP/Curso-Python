@@ -21,7 +21,8 @@ print(my_dict)
 print(len(my_other_dict)) #4 elements
 print(len(my_dict)) #5 elements
 
-#Formas de acceder a un elemento
+print("\nFormas de acceder a un elemento")
+print(list(my_dict.values()))
 print(my_dict["Nombre"])
 my_dict["Nombre"]="Daniel" #Puedes actualizarlo
 print(my_dict["Nombre"])
@@ -35,7 +36,7 @@ print(my_dict[1])
 print("\nOPERADORES " )
 
 print("Dire" in my_dict) #F porque estamos buscando "CLAVES"
-print("Nombre" in my_dict) # "Nombre" es la clave para acceder a "Dire"
+print("Nombre" in my_dict) # ¿"Nombre" esta la clave para acceder a "Dire"?
 
 print(my_dict.items()) #Returna los conjuntos y subconjuntos
 print(my_dict.keys()) #Returna las lista
