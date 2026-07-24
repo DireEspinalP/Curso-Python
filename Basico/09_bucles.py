@@ -45,7 +45,10 @@ while my_variable<18:
 
 ##----FOR----##
 print("\n---------FOR---------")
-
+"""
+for condicion :
+    operador
+"""
 print("\nCondicion 4) 'lista' ")
 my_list={35,67,69,81,150}
 for element in my_list:
