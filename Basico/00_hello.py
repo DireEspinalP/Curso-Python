@@ -26,3 +26,9 @@ print(type(10)) #bien-> tipo int
 print(type(3.14)) #bien-> tipo float
 print(type(True)) #bien-> tipo bool
 print(type(4+2j)) #bien-> tipo complex
+
+#Input
+nombre=input("\nNombre: ")
+edad=int(input("Edad: "))
+mensaje=str(input("Mensaje: "))
+print(f"Tu nombre es {nombre}, tienes {edad} años y tu mensaje incertado es {mensaje}")
