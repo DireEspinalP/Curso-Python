@@ -29,3 +29,13 @@ class EmpleadoArtista(Persona,Artista):
 
 dire=EmpleadoArtista("Dire",18,"peruano","aprender rapido",1000,"Github")
 dire.presentarse()
+
+#ADICIONAL
+herencia=issubclass(Artista,Persona)
+instancia1=isinstance(dire,EmpleadoArtista)
+instancia2=isinstance(dire,Artista)
+instancia3=isinstance(dire,Persona)
+print(herencia)
+print(instancia1)
+print(instancia2)
+print(instancia3)
