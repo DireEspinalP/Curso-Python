@@ -16,10 +16,11 @@ class Artista:
     def mostrar_habilidad(self):
         return (f"Mi habilidad es {self.habilidad}")
 
+#Hereda dos clases Persona y Artista
 class EmpleadoArtista(Persona,Artista):
     def __init__(self, nombre, edad, nacionalidad,habilidad,salario,empresa):
         Persona.__init__(self,nombre, edad, nacionalidad)
-        Artista.__init__(self,habilidad)
+        Artista.__init__(self,habilidad) 
         self.salario=salario
         self.empresa=empresa
 
@@ -31,6 +32,8 @@ dire=EmpleadoArtista("Dire",18,"peruano","aprender rapido",1000,"Github")
 dire.presentarse()
 
 #ADICIONAL
+#Verificar si es una SUBCLASE (si ha sido heredado)
+# o si el objeto es una instancia de una clase nombrada
 herencia=issubclass(Artista,Persona)
 instancia1=isinstance(dire,EmpleadoArtista)
 instancia2=isinstance(dire,Artista)
