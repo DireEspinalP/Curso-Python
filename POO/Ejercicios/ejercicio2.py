@@ -14,8 +14,24 @@ e imprime sus atributos y utiliza sus metodos para asegurar que todo
 funciona correctamente.
 
 """
+#Mi solucion:
+class Persona:
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+
+    def imprimir_info(self):
+        print(f"Nombre: {self.nombre}, Edad: {self.edad}")
+
+class Estudiante(Persona):
+    def __init__(self,nombre,edad,grado):
+        super().__init__(nombre,edad)
+        self.grado = grado
+    def imprimir_grado(self):
+        print(f"Grado: {self.grado}")
 
 """
+
 HERENCIA EJERCICIO 2
 b)
 Imagina que estas modelando animales en un zoo. Crea tres clases:
@@ -32,3 +48,24 @@ Finalmente, juega con el orden de herencia de la clase "Murcielago"
 y observa como cambia el MRO y el comportamiento de los meotodos al usar
 super().
 """
+#Mi solucion
+class Animal:
+    def comer(self):
+        print("El animal esta comiendo")
+class Mamifero(Animal):
+    def amamantar(self):
+        print("El mamifero esta amamantando")
+class Ave(Animal):
+    def volar(self):
+        print("El ave esta volando")
+class Murcielago(Mamifero,Ave):
+    def __init__(self):
+        super().__init__()
+    def correr(self):
+        print("El murcielago esta corriendo")
+
+elefante = Mamifero()
+elefante.comer()
+paloma = Ave()
+paloma.volar()
+print(f"{Murcielago.mro()}\n")
