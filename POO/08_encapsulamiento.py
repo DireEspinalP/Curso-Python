@@ -1,4 +1,4 @@
-# Encapsulamiento
+###  Encapsulamiento ###
 
 class MicClase:
     def __init__(self, valor):
