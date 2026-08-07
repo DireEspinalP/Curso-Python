@@ -13,7 +13,7 @@ una posible formula es: el promedio de las habilidades de ambos,
 al cuadrado.
 
 """
-
+#Solucion
 class Personaje:
     def __init__(self,nombre,fuerza, velocidad):
           self.nombre=nombre
