@@ -56,3 +56,13 @@ robot.trabajar()
 humano=Humano()
 humano.trabajar()
 humano.dormir()
+"""
+Este código muestra el Principio de Segregación de Interfaz: es mejor 
+tener varias interfaces pequeñas que una sola interfaz enorme que 
+obligue a implementar cosas innecesarias. Arriba, en la parte comentada, 
+Robot está obligado a heredar comer() y dormir(), aunque no los use, 
+solo porque pertenecen a la misma interfaz que trabajar(). Abajo, se 
+soluciona dividiendo esa interfaz en tres más pequeñas y específicas: 
+Trabajador, Comedor y Durmiente. Así, cada clase hereda solo lo que 
+realmente necesita: Humano usa las tres, y Robot usa solo Trabajador.
+"""
