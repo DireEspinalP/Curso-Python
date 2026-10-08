@@ -27,3 +27,14 @@ print(arr2[2:])
 print(arr1[::2])
 print(arr1[1:5:2])
 print(arr2[::2, ::2])
+
+# Shape y Reshape
+# Shape es la forma que tiene el arreglo (filas, columnas)
+# Reshape es cambiar la forma del arreglo, pero el numero de elementos debe ser el mismo
+arr3=np.array([[1,2,3], [4,5,6]])
+arr4=np.array([[1,2,3], [4,5,6], [7,8,9]])
+print(f"El shape de arr3 es: {arr3.shape}")
+print(f"El reshape de arr3 es {arr3.reshape(1,6)}")
+print(f"El shape de arr4 es: {arr4.shape}")
+print(f"El reshape de arr4 es {arr4.reshape(1,9)}") # 1 fila y 9 columnas
+
