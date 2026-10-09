@@ -25,3 +25,8 @@ print(f"La norma: {np.round(np.linalg.norm(arr1), decimals=2)}")
 print(f"Los autovalores: {np.round(np.linalg.eigvals(arr1), decimals=2)}")
 
 print(f"Los autovectores: \n{np.round(np.linalg.eig(arr1)[1], decimals=2)}")
+
+print(f"QR de arr1: \n{np.round(np.linalg.qr(arr1), decimals=2)}") 
+print(f"Pinv de arr1: \n{np.round(np.linalg.pinv(arr1), decimals=2)}")
+# Pinv vs inverse, la pinv es la inversa generalizada, que se puede calcular para matrices no cuadradas o singulares.
+# La inversa solo se puede calcular para matrices cuadradas y no singulares.
