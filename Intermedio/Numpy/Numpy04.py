@@ -43,6 +43,10 @@ plt.show()
 sns.displot(random.chisquare(df=2, size=1000), kind="kde")
 plt.show()
 
+sns.displot(random.t(1.3 , size=10000))
+plt.show()
+sns.displot(random.t(df=2, size=1000), kind="kde")
+plt.show()
 #kind="kde" grafica la densidad de probabilidad de la distribucion, en lugar del histograma
 
 # Comparacion de distribuciones
