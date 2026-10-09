@@ -1,8 +1,27 @@
-# Distribuciones 
 import numpy as np
 from numpy import random
 import matplotlib.pyplot as plt
 import seaborn as sns
+
+"""
+La probabilidad de que el valor sea 3 se establece en 0,1.
+
+La probabilidad de que el valor sea 5 se establece en 0,3.
+
+La probabilidad de que el valor sea 7 se establece en 0,6.
+
+La probabilidad de que el valor sea 9 se establece en 0.
+
+"""
+x = random.choice([3, 5, 7, 9], p=[0.1, 0.3, 0.6, 0.0], size=(10))
+
+print(x)
+
+arr2=np.array([[0.1, 0.3 ,0.6]])
+print(f"\n Array de probabilidaes {arr2}")
+print(f"\n La suma de las prob. del arr es {np.sum(arr2)}") #Suma de elementos
+
+# Distribuciones 
 #Todas distribuciones con su parametro y tamaño
 """
 1) Binomial:            binomial(n, p, size=None)

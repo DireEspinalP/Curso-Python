@@ -19,17 +19,3 @@ print(f"Genera un 2x2 de los elementos de arr3 \n{np.random.choice(arr3, size=(2
 print(f"Random seed: {np.random.seed(42)}") # Semilla para generar numeros random reproducibles
 print(f"Permuta de arr3: {np.random.permutation(arr3)}") # Permuta los elementos del arr3
 print(f"Randn: {np.random.randn(2,2)}") # Genera un arreglo de 2x2 con numeros random de una distribucion normal estandar
-
-"""
-La probabilidad de que el valor sea 3 se establece en 0,1.
-
-La probabilidad de que el valor sea 5 se establece en 0,3.
-
-La probabilidad de que el valor sea 7 se establece en 0,6.
-
-La probabilidad de que el valor sea 9 se establece en 0.
-
-"""
-x = random.choice([3, 5, 7, 9], p=[0.1, 0.3, 0.6, 0.0], size=(10))
-
-print(x)
