@@ -26,7 +26,10 @@ print(f"\n allclose(arr1>0) {np.allclose(arr1, arr1)}") # Compara si dos arreglo
 
 # Allclose a diferencia de all, allclose permite comparar arreglos con TOLERANCIA, es decir,
 # si los elementos son iguales dentro de un margen de error.
-
+a = np.array([0.1 + 0.2])
+b = np.array([0.3])
+print(a == b)             # [False]  (error de punto flotante)
+print(np.allclose(a, b))
 
 
 

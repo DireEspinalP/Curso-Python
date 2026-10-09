@@ -26,7 +26,23 @@ print(f"Los autovalores: {np.round(np.linalg.eigvals(arr1), decimals=2)}")
 
 print(f"Los autovectores: \n{np.round(np.linalg.eig(arr1)[1], decimals=2)}")
 
-print(f"QR de arr1: \n{np.round(np.linalg.qr(arr1), decimals=2)}") 
+Q, R = np.linalg.qr(arr1)
+print(f"Q:\n{np.round(Q, 2)}")
+print(f"R:\n{np.round(R, 2)}")
+print(np.allclose(Q @ R, arr1)) 
+
+
+A = np.array([[1, 2], [3, 4], [5, 6]])
+
+U, S, Vh = np.linalg.svd(A, full_matrices=False)
+
+print(f"U:\n{np.round(U, 2)}")
+print(f"S: {np.round(S, 2)}")
+print(f"Vh:\n{np.round(Vh, 2)}")
+
+print(np.allclose(A, U @ np.diag(S) @ Vh)) 
+
+
 print(f"Pinv de arr1: \n{np.round(np.linalg.pinv(arr1), decimals=2)}")
 # Pinv vs inverse, la pinv es la inversa generalizada, que se puede calcular para matrices no cuadradas o singulares.
 # La inversa solo se puede calcular para matrices cuadradas y no singulares.

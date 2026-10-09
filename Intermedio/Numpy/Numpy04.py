@@ -7,9 +7,9 @@ import seaborn as sns
 """
 1) Binomial:            binomial(n, p, size=None)
 2) Poisson:             poisson(lam, size=None)
-3) Exponential:         exponential(lam, size=None)
+3) Exponential:         exponential(scale, size=None)
 4) Uniform:             uniform(low, high, size=None)
-5) Normal:              normal(u, sigma, size=None)
+5) Normal:              normal(loc, scale, size=None)
 6) Chi-square:          chisquare(df, size=None)
 7) t-Student:            t(df, size=None)
 """
