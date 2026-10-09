@@ -37,4 +37,6 @@ print(f"El shape de arr3 es: {arr3.shape}")
 print(f"El reshape de arr3 es {arr3.reshape(1,6)}")
 print(f"El shape de arr4 es: {arr4.shape}")
 print(f"El reshape de arr4 es {arr4.reshape(1,9)}") # 1 fila y 9 columnas
-
+print(f"El size de arr4 es: {arr4.size}") # Numero de elementos del arreglo
+print(f"El where de arr4 es: {np.where(arr4>5)}") # Indices de los elementos mayores a 5
+print(f"El copy de arr4 es: {arr4.copy()}") # Copia del arreglo
